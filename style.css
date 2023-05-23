@@ -371,6 +371,35 @@ img {
 .subcategory__items__item {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.subcategory__items__item__image {
+  filter: brightness(100%);
+}
+.subcategory__items__item__image:hover {
+  filter: brightness(70%);
+}
+.subcategory__items__item__div {
+  display: flex;
+  gap: 11px;
+}
+.subcategory__items__item__btn {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  position: absolute;
+  top: 33%;
+  left: 30%;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.subcategory__items__item__btn:hover {
+  background: #F16D7F;
 }
 .subcategory__items__item__price {
   font-weight: 400;
@@ -433,10 +462,6 @@ img {
   background: white;
   border: 1px solid #F16D7F;
   transition: 0.3s;
-}
-
-footer {
-  background: #222224;
 }
 
 .registration__block {
@@ -711,6 +736,7 @@ footer {
   gap: 30px;
   padding-top: 104px;
   padding-bottom: 104px;
+  background: black;
 }
 .footer__up_item {
   display: flex;

@@ -455,6 +455,42 @@ img {
         &__item {
             display: flex;
             flex-direction: column;
+            position: relative;
+
+            &__image {
+                filter: brightness(100%);
+            }
+
+            &__image:hover {
+                filter: brightness(70%);
+
+            }
+
+            &__div {
+                display: flex;
+                gap: 11px;
+            }
+
+            &__btn {
+                background-color: transparent;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                position: absolute;
+                top: 33%;
+                left: 30%;
+                color: white;
+                padding: 10px;
+                border: 1px solid white;
+                cursor: pointer;
+                border-radius: 5px;
+                
+            }
+
+            &__btn:hover {
+                background: $colorSite;
+            }
 
             &__price {
                 font-weight: 400;
@@ -527,10 +563,6 @@ img {
         border: 1px solid $colorSite;
         transition: $transitionTime;
     }
-}
-
-footer {
-    background: #222224;
 }
 
 .registration__block {
@@ -873,6 +905,7 @@ footer {
     gap: 30px;
     padding-top: 104px;
     padding-bottom: 104px;
+    background: black;
 
     &_item {
         display: flex;
@@ -1293,6 +1326,7 @@ footer {
             gap: 40px;
         }
     }
+
     .category {
         grid-template-columns: 1fr;
         margin-right: 16px;
